@@ -1,0 +1,35 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Світлий фон усього списку. */
+.fruits {
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    background-color: #ed9eae;
+    color: #fff;
+    list-style-position: inside;
+}
+
+/* Темніший фон кожного пункту. */
+.fruits li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #c66378;
+}
+
+.fruits li:last-child {
+    margin-bottom: 0;
+}
+
+/* Найтемніший фон лише під назвою фрукта. */
+.fruits span {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #9e354a;
+}
