@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.picture {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+}
+
+.picture-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 270px;
+    height: 270px;
+    border: 10px solid #eeeeee;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 270px;
+    height: 270px;
+    border: 10px solid #f6b1b5;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.frame-back {
+    z-index: 1;
+}
+
+.frame-front {
+    z-index: 3;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    pointer-events: none;
+}
